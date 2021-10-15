@@ -78,7 +78,7 @@
                                 </a>
                             </li>
                         </ul>
-                        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website 2021</div>
+                        <div class="small text-center text-muted fst-italic">Copyright &copy; Your Website <span id="copyright"></span> </div>
                     </div>
                 </div>
             </div>
@@ -87,6 +87,8 @@
         <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
         <!-- Core theme JS-->
         <script src="{{ url_for('static', filename='vendor/clean-blog.min.js')}}"></script>
+
+        <script> $("#copyright").text(new Date().getFullYear());  </script>
 
 </body>
 </html>
