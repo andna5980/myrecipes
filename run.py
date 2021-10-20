@@ -27,10 +27,10 @@ def about():
 
 
 @app.route("/")
-@app.route("/get_recipes")
-def get_recipes():
-    recetas = mongo.db.recetas.find()
-    return render_template("recipes.html", recetas=recetas, page_title="Recipes")
+@app.route("/get_celebrities")
+def get_celebrities():
+    celebrities = mongo.db.celebrities.find()
+    return render_template("recipes.html", celebrities=celebrities, page_title="Recipes")
 
 
 @app.route("/contact")
