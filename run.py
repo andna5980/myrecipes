@@ -32,7 +32,7 @@ def contact():
 
 
 @app.route("/recipes")
-def careers():
+def recipes():
     return render_template("recipes.html", page_title="Recipes")
 
 
