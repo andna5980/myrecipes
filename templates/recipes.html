@@ -3,6 +3,9 @@
 
     <h2>{{ page_title }}</h2>
     
-    
+    {% for receta en recetas %}
+        {{ recetas.food_name }}
+        {{ recetas.food_type }}
+
     
 {% endblock %}
