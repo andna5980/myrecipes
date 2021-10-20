@@ -3,10 +3,10 @@
 
     <h2>{{ page_title }}</h2>
     
-    {% for celebrity in celebrities %}
-        {{ celebrity.first }}<br>
-        {{ celebrity.last }}<br>
-        {{ celebrity.nationality }}<br>
+    {% for Recipe in Recipes %}
+        {{ Recipe.foodName }}<br>
+        {{ Recipe.foodType }}<br>
+        {{ Recipe.cuisine }}<br>
     {% endfor %}
 
     
