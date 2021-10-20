@@ -4,8 +4,10 @@
     <h2>{{ page_title }}</h2>
     
     {% for receta en recetas %}
-        {{ recetas.food_name }}
-        {{ recetas.food_type }}
+        {{ recetas.food_name }}<br>
+        {{ recetas.food_type }}<br>
+    {% endfor %}
+
 
     
 {% endblock %}
