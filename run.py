@@ -31,9 +31,9 @@ def contact():
     return render_template("contact.html", page_title="Contact")
 
 
-@app.route("/careers")
+@app.route("/recipes")
 def careers():
-    return render_template("careers.html", page_title="Careers")
+    return render_template("recipes.html", page_title="Recipes")
 
 
 if __name__ == "__main__":
