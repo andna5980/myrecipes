@@ -26,14 +26,16 @@ def about():
     return render_template("about.html", page_title="About")
 
 
+@app.route("/recipes")
+@app.route("/get_recipes")
+def get_recipes():
+    recipes = mongo.db.recipes.find()
+    return render_template("recipes.html", recipes=recipes , page_title="Recipes")
+
+
 @app.route("/contact")
 def contact():
     return render_template("contact.html", page_title="Contact")
-
-
-@app.route("/recipes")
-def recipes():
-    return render_template("recipes.html", page_title="Recipes")
 
 
 if __name__ == "__main__":
@@ -41,4 +43,3 @@ if __name__ == "__main__":
         host=os.environ.get("IP", "0.0.0.0"),
         port=int(os.environ.get("PORT", "5000")),
         debug=True)
-        
