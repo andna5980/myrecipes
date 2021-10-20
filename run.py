@@ -29,7 +29,7 @@ def about():
 @app.route("/")
 @app.route("/get_recipes")
 def get_recipes():
-    recipes = mongo.db.recipes.find()
+    recipes = mongo.db.Recipes.find()
     return render_template("recipes.html", recipes=recipes , page_title="Recipes")
 
 
