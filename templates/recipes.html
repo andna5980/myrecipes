@@ -3,10 +3,10 @@
 
     <h2>{{ page_title }}</h2>
     
-    {% for Recipe in Recipes %}
-        {{ Recipe.foodName }}<br>
-        {{ Recipe.foodType }}<br>
-        {{ Recipe.cuisine }}<br>
+    {% for receta in recetas %}
+        {{ receta.food_name }}<br>
+        {{ receta.food_type }}<br>
+        {{ receta.cuisine }}<br>
     {% endfor %}
 
     
