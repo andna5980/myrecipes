@@ -17,7 +17,6 @@ mongo = PyMongo(app)
 
 
 @app.route("/")
-app.route("/get_tasks")
 def index():
     return render_template("index.html")
 
